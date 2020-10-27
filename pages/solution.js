@@ -1,13 +1,13 @@
 import { useContext } from "react";
-import { useRouter } from 'next/router';
-import Banner from "../containers/banner/Banner";
-import Services from "../containers/services/Services";
-import Subscribe from "../containers/subscribe/Subscribe";
+import {useRouter} from "next/router";
+import SolutionBanner from "../containers/solution-banner/SolutionBanner";
+import Work from "../containers/work/Work";
+import Pricing from "../containers/pricing/Pricing";
 import Clients from "../containers/clients/Clients";
 import {AuthContext} from "../contexts/auth/authContext";
 import SEO from "../components/seo";
 
-export default function Home() {
+export default function Solution() {
   const router = useRouter();
 
   const { authState } = useContext(AuthContext);
@@ -17,10 +17,10 @@ export default function Home() {
 
   return isAuthenticated && (
     <>
-      <SEO title="Acceuil | Geeks Data" description="Page d'acceuil du mini site du teste technique pour Geeks Data" />
-      <Banner />
-      <Services />
-      <Subscribe />
+      <SEO title="Solution | Geeks Data" description="Page de description de produit du mini site du teste technique pour Geeks Data" />
+      <SolutionBanner />
+      <Work />
+      <Pricing />
       <Clients />
     </>
   )

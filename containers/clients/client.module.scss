@@ -1,0 +1,18 @@
+.client {
+  display: block;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+
+  .wrapper {
+    margin-bottom: -50px;
+
+    .top {
+      text-align: center;
+    }
+
+    .clientsContainer {
+      margin-bottom: 50px;
+    }
+  }
+}

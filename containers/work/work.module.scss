@@ -1,0 +1,62 @@
+.work {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/work-bg.png);
+  background-size: cover;
+
+  .title {
+    text-align: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    .item {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 14px;
+      text-align: center;
+
+      .link {
+        padding: 0 55px;
+        position: relative;
+        text-decoration: none;
+        display: block;
+
+        img {
+          filter: brightness(0) invert(0);
+          opacity: 0.4;
+          vertical-align: middle;
+          border-style: none;
+        }
+
+        h6 {
+          opacity: 0.5;
+          margin-top: 15px;
+          font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+          margin-bottom: 0;
+          color: #4e4e4e;
+        }
+      }
+    }
+  }
+
+  .image {
+    padding-top: 50px;
+    text-align: center;
+    display: block;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

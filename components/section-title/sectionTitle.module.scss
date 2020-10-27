@@ -1,0 +1,44 @@
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #4e4e4e;
+
+  &.light {
+    color: #fff;
+  }
+
+  .title {
+    display: inline-block;
+    margin-bottom: 0;
+
+    h2 {
+      line-height: 0.8;
+      font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1920 - 300)));
+      font-weight: 600;
+    }
+  }
+
+  .description {
+    margin-bottom: 0;
+
+    p {
+      padding: 0 30px;
+      margin-bottom: 0;
+      font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+      margin-top: 0;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  hr {
+    width: 116px;
+    height: 2px;
+    background-color: #00bfe6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+    overflow: visible;
+  }
+}

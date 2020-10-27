@@ -1,0 +1,92 @@
+.login {
+  background-image: url(/subscribe-bg.jpg);
+  position: relative;
+  border-bottom: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  height: 100vh;
+
+  .container {
+    height: 100%;
+
+    .row {
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .wrapper {
+        justify-content: center;
+
+        .card {
+          background-color: #fff;
+          border-radius: 30px;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
+          .top {
+            text-align: center;
+            position: relative;
+            padding: 20px 20px 0px;
+            color: #4e4e4e;
+          }
+
+          .bottom {
+            padding: 40px;
+
+            .inputWrapper {
+              margin-bottom: 60px;
+
+              label {
+                margin-bottom: 0;
+                font-weight: 500;
+                display: inline-block;
+              }
+
+              .input {
+                border: none;
+                border-radius: 0;
+                border-bottom: 1px solid #f1f1f1;
+                padding: 0;
+                background: transparent;
+                height: auto;
+                font-size: 15px;
+                width: 100%;
+                display: block;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+
+                &:focus {
+                  box-shadow: none;
+                  outline: none
+                }
+              }
+            }
+
+            .action {
+              text-align: center;
+
+              .button {
+                padding: 14px 30px;
+                letter-spacing: 1px;
+                color: #ffffff;
+                border: 1px solid #4e4e4e;
+                background-color: #4e4e4e;
+                font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+                text-decoration: none;
+                text-transform: capitalize;
+                border-radius: 50px;
+                cursor: pointer;
+
+                &.desactive {
+                  cursor: not-allowed;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

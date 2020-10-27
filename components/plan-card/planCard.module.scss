@@ -1,0 +1,92 @@
+.planCard {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  transition: all 0.6s;
+  opacity: 0.5;
+  margin: 16px 9px;
+  color: #4e4e4e;
+  text-align: center;
+
+  &.active {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  .planTitle {
+    text-transform: uppercase;
+    font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1920 - 300)));
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .subLine {
+    width: auto !important;
+    display: inline-block;
+  }
+
+  .price {
+    font-weight: unset;
+    margin: 45px 0 40px 0;
+    text-transform: capitalize;
+
+    span {
+      font-weight: 700;
+      font-size: 50px;
+      text-transform: none;
+    }
+  }
+
+  .featureList {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0;
+
+    .item {
+      font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
+      margin-bottom: 11px;
+      font-weight: 500;
+      line-height: normal;
+
+      img {
+        margin-right: 15px;
+        width: auto !important;
+        display: inline-block;
+        vertical-align: middle;
+        border-style: none;
+      }
+
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: none;
+      }
+    }
+  }
+
+  .button {
+    border: 2px solid #4e4e4e;
+    color: #4e4e4e !important;
+    padding: 16px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background-color: #fff;
+    font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    line-height: 1.5;
+
+    &:hover {
+      background-color: #4e4e4e;
+      color: #fff !important;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.serviceBox {
+  box-sizing: border-box;
+
+  img {
+    height: 80px;
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .content {
+    padding-left: 20px;
+
+    .title {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      letter-spacing: unset;
+      color: #4e4e4e;
+      font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+    }
+
+    hr {
+      height: 1px;
+      width: 75px;
+      background-color: var(--secondary);
+      text-align: left;
+      margin: 0 0 15px;
+      transition: all 0.5s;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: content-box;
+      overflow: visible;
+    }
+
+    .text {
+      font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+      margin-top: 0;
+      letter-spacing: 0.05em;
+      margin-bottom: -7px;
+      color: #4e4e4e;
+      font-weight: 400;
+      line-height: 1.8;
+    }
+  }
+}

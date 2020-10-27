@@ -1,0 +1,115 @@
+.solutionBanner {
+  display: block;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+
+  .mainColor {
+    color: #00bfe6;
+  }
+
+  .wrapper {
+    background-size: cover;
+    background: url("/subscribe-bg.jpg") no-repeat;
+    height: 100vh;
+
+    .leftPanel {
+      height: calc(100vh - 83px);
+      margin-top: 83px;
+      align-items: center;
+      display: flex;
+      position: relative;
+      z-index: 2;
+
+      .content {
+        margin-top: -25px;
+
+        .headerText {
+          margin-bottom: 30px;
+          display: flex;
+
+          h1 {
+            font-size: calc(22px + (62 - 22) * ((100vw - 300px) / (1920 - 300)));
+            font-weight: 600;
+            margin-top: -17px;
+            margin-bottom: -8px;
+            line-height: normal;
+            color: #fff;
+
+            span {
+              text-transform: none;
+            }
+
+            .small {
+              font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1920 - 300)));
+            }
+          }
+
+          .suffixImg {
+            margin-left: 15px;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+
+            img {
+              max-width: 100%;
+              height: auto;
+              vertical-align: middle;
+              border-style: none;
+            }
+          }
+        }
+
+        .headerSubText {
+          margin-bottom: 30px;
+          color: #fff;
+
+          h3 {
+            font-weight: 200;
+            font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1920 - 300)));
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+
+          h6 {
+            font-weight: 200;
+            text-transform: none;
+            font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+            letter-spacing: 0.025em;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .rightPanel {
+      position: absolute;
+      height: calc(100vh - 83px);
+      margin-top: 20px;
+      align-items: center;
+      display: flex;
+      z-index: 2;
+
+      img {
+        vertical-align: middle;
+        border-style: none;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .bg {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+  }
+}
